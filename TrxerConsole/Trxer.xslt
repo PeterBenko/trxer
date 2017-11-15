@@ -105,7 +105,7 @@
           <xsl:variable name="testRunOutcome" select="t:TestRun/t:ResultSummary/@outcome"/>
 
           <div class="StatusBar statusBar{$testRunOutcome}">
-            <div class="statusBar{$testRunOutcome}Inner">
+            <div class="statusBarInner">
               <center>
                 <h1 class="hWhite">
                   <div class="titleCenterd">
@@ -297,7 +297,6 @@
             <caption>All Tests Group By Classes</caption>
             <thead>
               <tr class="odd">
-                <th scope="col">Time</th>
                 <th scope="col" abbr="Status">Status</th>
                 <th scope="col" abbr="Test">
                   Classes <div class="NumberTag">
@@ -313,7 +312,6 @@
                 <xsl:variable name="testsSet" select="key('TestMethods', @className)" />
                 <xsl:variable name="testsCount" select="count($testsSet)" />
                 <tr>
-                  <th scope="row" class="column1">7/21/2014 10:56:45 PM</th>
                   <td class="PackageStatus">
                     <canvas id="{generate-id(@className)}canvas" width="100" height="25">
                     </canvas>

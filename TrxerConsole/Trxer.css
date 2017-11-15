@@ -58,6 +58,7 @@ address {
     height: 60px;
 }
 
+.statusBarCompleted,
 .statusBarPassed {
     background-color: #5bab5b;
 }
@@ -66,21 +67,8 @@ address {
     background-color: #b93333;
 }
 
-.statusBarFailedInner {
+.statusBarInner {
     position: relative;
-    background-color: #a90000;
-    width: 100%;
-    height: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    top: 15%;
-}
-
-.statusBarPassedInner {
-    position: relative;
-    background-color: #339833;
     width: 100%;
     height: 70%;
     margin-left: auto;
