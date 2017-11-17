@@ -174,9 +174,9 @@ function CalculateTotalPrecents() {
     myData.push(failedPrec);
     myData.push(warnPrec);
 
-    myParsedData.push(allPassed + " (" + Math.round(passedPrec).toFixed(2) + "%)");
-    myParsedData.push(allFailed + " (" + Math.round(failedPrec).toFixed(2) + "%)");
-    myParsedData.push(allWarns + " (" + Math.round(warnPrec).toFixed(2) + "%)");
+    myParsedData.push(allPassed + " (" + passedPrec.toFixed(2) + "%)");
+    myParsedData.push(allFailed + " (" + failedPrec.toFixed(2) + "%)");
+    myParsedData.push(allWarns + " (" + warnPrec.toFixed(2) + "%)");
 
     document.getElementById('dataViewer').innerHTML = "<tr class='odd'><td><canvas id='canvas' width='240' height='150'>This text is displayed if your browser does not support HTML5 Canvas.</canvas></td></tr>";
     CreatePie();
